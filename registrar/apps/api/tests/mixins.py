@@ -189,6 +189,7 @@ class AuthRequestMixin(JwtMixin):
         """
         return self.request('delete', path, user)
 
+    # pylint: disable=too-many-positional-arguments
     def request(self, method, path, user, data=None, file=None):
         """
         Perform an HTTP request of the given method.

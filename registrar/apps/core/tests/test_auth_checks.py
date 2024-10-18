@@ -405,6 +405,7 @@ class GetProgramsByAPIPermissionsTests(TestCase):
         },
     )
     @ddt.unpack
+    # pylint: disable=too-many-positional-arguments
     def test_get_programs_by_api_permission(
         self,
         group_names,

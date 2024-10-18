@@ -213,6 +213,7 @@ class RegistrarAPITestCase(TrackTestMixin, APITestCase):
             self._add_program_to_cache(program)
 
     @classmethod
+    # pylint: disable=too-many-positional-arguments
     def _add_program_to_cache(cls, program, title=None, url=None, program_type="Masters", curricula=None):
         """
         Adds the given program to the program cache
@@ -543,6 +544,7 @@ class ProgramListViewTests(RegistrarAPITestCase, AuthRequestMixin):
         },
     )
     @ddt.unpack
+    # pylint: disable=too-many-positional-arguments
     def test_program_filters(
             self,
             groups=frozenset(),

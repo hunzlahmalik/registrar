@@ -65,6 +65,7 @@ class S3FilestoreTests(TestCase, S3MockEnvVarsMixin):
         )
     )
     @ddt.unpack
+    # pylint: disable=too-many-positional-arguments
     def test_s3_filestore(self, bucket, location, prefix, path, contents):
         filestore = get_filestore(bucket, prefix)
         with mock.patch.object(filestore.backend, 'location', new=location):

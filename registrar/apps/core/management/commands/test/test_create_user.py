@@ -30,6 +30,7 @@ class TestCreateUser(TestCase):
         cls.org3group = OrganizationGroupFactory().name
         cls.all_groups = [cls.org1group_1, cls.org1group_2, cls.org2group, cls.org3group]
 
+    # pylint: disable=too-many-positional-arguments
     def assert_user(
         self,
         user,

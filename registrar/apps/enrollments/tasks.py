@@ -51,7 +51,7 @@ class EnrollmentReadTask(UserTask):
         )
 
 
-# pylint: disable=unused-argument
+# pylint: disable=unused-argument, too-many-positional-arguments
 @shared_task(base=EnrollmentReadTask, bind=True)
 def list_program_enrollments(self, job_id, user_id, file_format, program_key, include_username_email=False):
     """
@@ -86,6 +86,7 @@ def list_program_enrollments(self, job_id, user_id, file_format, program_key, in
 
 
 @shared_task(base=EnrollmentReadTask, bind=True)
+# pylint: disable=too-many-positional-arguments
 def list_course_run_enrollments(
         self,
         job_id,
@@ -135,6 +136,7 @@ def list_course_run_enrollments(
 
 
 @shared_task(base=EnrollmentReadTask, bind=True)
+# pylint: disable=too-many-positional-arguments
 def list_all_course_run_enrollments(
         self,
         job_id,

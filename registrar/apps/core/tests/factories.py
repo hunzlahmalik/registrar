@@ -65,7 +65,7 @@ class UserFactory(factory.django.DjangoModelFactory):
             return
 
         for group in extracted:
-            self.groups.add(group)  # pylint: disable=no-member
+            self.groups.add(group)
 
 
 def name_to_key(name):

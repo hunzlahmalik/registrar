@@ -15,7 +15,7 @@ from .serializers import serialize_course_run_grades_to_csv
 
 
 @shared_task(base=UserTask, bind=True)
-# pylint: disable=unused-argument
+# pylint: disable=unused-argument, too-many-positional-arguments
 def get_course_run_grades(self, job_id, user_id, file_format, program_key, internal_course_key):
     """
     A user task that reads course run grade data from the LMS, and writes it to

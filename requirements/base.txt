@@ -14,20 +14,20 @@ asgiref==3.8.1
     #   django-cors-headers
 backoff==1.10.0
     # via analytics-python
-billiard==4.2.0
+billiard==4.2.1
     # via celery
 celery==5.4.0
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/base.in
     #   django-user-tasks
-certifi==2024.7.4
+certifi==2024.8.30
     # via requests
-cffi==1.17.0
+cffi==1.17.1
     # via
     #   cryptography
     #   pynacl
-charset-normalizer==3.3.2
+charset-normalizer==3.4.0
     # via requests
 click==8.1.7
     # via
@@ -42,7 +42,7 @@ click-plugins==1.1.1
     # via celery
 click-repl==0.3.0
     # via celery
-cryptography==43.0.0
+cryptography==43.0.3
     # via
     #   pyjwt
     #   social-auth-core
@@ -50,7 +50,7 @@ defusedxml==0.8.0rc2
     # via
     #   python3-openid
     #   social-auth-core
-django==4.2.15
+django==4.2.16
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/base.in
@@ -73,7 +73,7 @@ django==4.2.15
     #   edx-django-utils
     #   edx-drf-extensions
     #   social-auth-app-django
-django-cors-headers==4.4.0
+django-cors-headers==4.5.0
     # via -r requirements/base.in
 django-crum==0.7.9
     # via edx-django-utils
@@ -83,7 +83,7 @@ django-extensions==3.1.5
     #   -r requirements/base.in
 django-guardian==2.4.0
     # via -r requirements/base.in
-django-model-utils==4.5.1
+django-model-utils==5.0.0
     # via
     #   -r requirements/base.in
     #   django-user-tasks
@@ -110,35 +110,35 @@ djangorestframework==3.15.2
     #   drf-yasg
     #   edx-api-doc-tools
     #   edx-drf-extensions
-dnspython==2.6.1
+dnspython==2.7.0
     # via pymongo
 drf-jwt==1.19.2
     # via edx-drf-extensions
-drf-yasg==1.21.7
+drf-yasg==1.21.8
     # via
     #   django-user-tasks
     #   edx-api-doc-tools
-edx-api-doc-tools==1.8.0
+edx-api-doc-tools==2.0.0
     # via -r requirements/base.in
-edx-auth-backends==4.3.0
+edx-auth-backends==4.4.0
     # via -r requirements/base.in
 edx-django-release-util==1.4.0
     # via -r requirements/base.in
-edx-django-utils==5.15.0
+edx-django-utils==7.0.0
     # via
     #   edx-drf-extensions
     #   edx-rest-api-client
-edx-drf-extensions==10.3.0
+edx-drf-extensions==10.4.0
     # via -r requirements/base.in
-edx-opaque-keys==2.10.0
+edx-opaque-keys==2.11.0
     # via edx-drf-extensions
-edx-rest-api-client==5.7.1
+edx-rest-api-client==6.0.0
     # via -r requirements/base.in
-idna==3.7
+idna==3.10
     # via requests
 inflection==0.5.1
     # via drf-yasg
-kombu==5.4.0
+kombu==5.4.2
     # via celery
 monotonic==1.6
     # via analytics-python
@@ -152,11 +152,11 @@ oauthlib==3.2.2
     #   social-auth-core
 packaging==24.1
     # via drf-yasg
-pbr==6.0.0
+pbr==6.1.0
     # via stevedore
-prompt-toolkit==3.0.47
+prompt-toolkit==3.0.48
     # via click-repl
-psutil==6.0.0
+psutil==6.1.0
     # via edx-django-utils
 pycparser==2.22
     # via cffi
@@ -167,7 +167,7 @@ pyjwt[crypto]==2.9.0
     #   edx-drf-extensions
     #   edx-rest-api-client
     #   social-auth-core
-pymongo==4.8.0
+pymongo==4.10.1
     # via edx-opaque-keys
 pynacl==1.5.0
     # via edx-django-utils
@@ -181,7 +181,7 @@ python-slugify==4.0.1
     #   -r requirements/base.in
 python3-openid==3.2.0
     # via social-auth-core
-pytz==2024.1
+pytz==2024.2
     # via
     #   -r requirements/base.in
     #   drf-yasg
@@ -189,7 +189,7 @@ pyyaml==6.0.2
     # via
     #   drf-yasg
     #   edx-django-release-util
-redis==5.0.8
+redis==5.1.1
     # via -r requirements/base.in
 requests==2.32.3
     # via
@@ -197,7 +197,6 @@ requests==2.32.3
     #   edx-drf-extensions
     #   edx-rest-api-client
     #   requests-oauthlib
-    #   slumber
     #   social-auth-core
 requests-oauthlib==2.0.0
     # via social-auth-core
@@ -209,8 +208,6 @@ six==1.16.0
     #   edx-auth-backends
     #   edx-django-release-util
     #   python-dateutil
-slumber==0.7.1
-    # via edx-rest-api-client
 social-auth-app-django==5.4.2
     # via
     #   -r requirements/base.in
@@ -221,7 +218,7 @@ social-auth-core==4.5.4
     #   social-auth-app-django
 sqlparse==0.5.1
     # via django
-stevedore==5.2.0
+stevedore==5.3.0
     # via
     #   edx-django-utils
     #   edx-opaque-keys
@@ -229,11 +226,13 @@ text-unidecode==1.3
     # via python-slugify
 typing-extensions==4.12.2
     # via edx-opaque-keys
-tzdata==2024.1
-    # via celery
+tzdata==2024.2
+    # via
+    #   celery
+    #   kombu
 uritemplate==4.1.1
     # via drf-yasg
-urllib3==1.26.19
+urllib3==1.26.20
     # via
     #   -c requirements/constraints.txt
     #   requests
@@ -244,3 +243,6 @@ vine==5.1.0
     #   kombu
 wcwidth==0.2.13
     # via prompt-toolkit
+
+# The following packages are considered to be unsafe in a requirements file:
+# setuptools

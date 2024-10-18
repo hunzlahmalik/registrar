@@ -14,6 +14,7 @@ from .constants import TRACKING_CATEGORY
 logger = logging.getLogger(__name__)
 
 
+# pylint: disable=too-many-positional-arguments
 def track(
     user_id,
     event,

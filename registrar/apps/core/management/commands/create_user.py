@@ -24,7 +24,7 @@ class Command(BaseCommand):
         parser.add_argument('--staff', dest='is_staff', action='store_true')
         parser.add_argument('-g', '--groups', dest='group_names', nargs='*', default=[])
 
-    # pylint: disable=arguments-differ
+    # pylint: disable=arguments-differ, too-many-positional-arguments
     @transaction.atomic
     def handle(self, username, email, is_superuser, is_staff, group_names, *args, **options):
         user = self.make_user(username, email, is_superuser, is_staff)
