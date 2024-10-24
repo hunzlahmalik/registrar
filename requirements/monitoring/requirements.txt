@@ -67,14 +67,14 @@ billiard==4.2.1
     #   -r requirements/monitoring/../production.txt
     #   -r requirements/monitoring/../test.txt
     #   celery
-boto3==1.35.44
+boto3==1.35.45
     # via
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
     #   -r requirements/monitoring/../production.txt
     #   -r requirements/monitoring/../test.txt
     #   moto
-botocore==1.35.44
+botocore==1.35.45
     # via
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
@@ -182,7 +182,7 @@ configobj==5.0.9
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
     #   ruamel-yaml-cmd
-coverage[toml]==7.6.3
+coverage[toml]==7.6.4
     # via
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
@@ -420,7 +420,7 @@ factory-boy==3.3.1
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
     #   -r requirements/monitoring/../test.txt
-faker==30.6.0
+faker==30.8.0
     # via
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
@@ -536,12 +536,12 @@ monotonic==1.6
     #   -r requirements/monitoring/../production.txt
     #   -r requirements/monitoring/../test.txt
     #   analytics-python
-moto==5.0.17
+moto==5.0.18
     # via
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
     #   -r requirements/monitoring/../test.txt
-mysqlclient==2.2.4
+mysqlclient==2.2.5
     # via
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../production.txt
@@ -569,7 +569,6 @@ packaging==24.1
     #   -r requirements/monitoring/../test.txt
     #   drf-yasg
     #   gunicorn
-    #   pydata-sphinx-theme
     #   pyproject-api
     #   pytest
     #   sphinx
@@ -638,7 +637,7 @@ pycparser==2.22
     #   -r requirements/monitoring/../production.txt
     #   -r requirements/monitoring/../test.txt
     #   cffi
-pydata-sphinx-theme==0.15.4
+pydata-sphinx-theme==0.16.0
     # via
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
@@ -828,7 +827,7 @@ ruamel-yaml-base==0.3.2
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
     #   ruamel-yaml-cmd
-ruamel-yaml-clib==0.2.8
+ruamel-yaml-clib==0.2.12
     # via
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
@@ -963,7 +962,7 @@ tomlkit==0.13.2
     #   -r requirements/monitoring/../local.txt
     #   -r requirements/monitoring/../test.txt
     #   pylint
-tox==4.23.0
+tox==4.23.2
     # via
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt

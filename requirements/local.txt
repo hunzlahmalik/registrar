@@ -51,12 +51,12 @@ billiard==4.2.1
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
     #   celery
-boto3==1.35.44
+boto3==1.35.45
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/test.txt
     #   moto
-botocore==1.35.44
+botocore==1.35.45
     # via
     #   -r requirements/test.txt
     #   boto3
@@ -134,7 +134,7 @@ colorama==0.4.6
     #   tox
 configobj==5.0.9
     # via ruamel-yaml-cmd
-coverage[toml]==7.6.3
+coverage[toml]==7.6.4
     # via
     #   -r requirements/test.txt
     #   pytest-cov
@@ -304,7 +304,7 @@ edx-rest-api-client==6.0.0
     #   -r requirements/test.txt
 factory-boy==3.3.1
     # via -r requirements/test.txt
-faker==30.6.0
+faker==30.8.0
     # via
     #   -r requirements/test.txt
     #   factory-boy
@@ -377,7 +377,7 @@ monotonic==1.6
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
     #   analytics-python
-moto==5.0.17
+moto==5.0.18
     # via -r requirements/test.txt
 newrelic==5.24.0.153
     # via
@@ -396,7 +396,6 @@ packaging==24.1
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
     #   drf-yasg
-    #   pydata-sphinx-theme
     #   pyproject-api
     #   pytest
     #   sphinx
@@ -444,7 +443,7 @@ pycparser==2.22
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
     #   cffi
-pydata-sphinx-theme==0.15.4
+pydata-sphinx-theme==0.16.0
     # via
     #   -r requirements/docs.txt
     #   sphinx-book-theme
@@ -577,7 +576,7 @@ ruamel-yaml==0.18.6
     #   ruamel-yaml-convert
 ruamel-yaml-base==0.3.2
     # via ruamel-yaml-cmd
-ruamel-yaml-clib==0.2.8
+ruamel-yaml-clib==0.2.12
     # via ruamel-yaml
 ruamel-yaml-cmd==0.6.5
     # via -r requirements/local.in
@@ -674,7 +673,7 @@ tomlkit==0.13.2
     # via
     #   -r requirements/test.txt
     #   pylint
-tox==4.23.0
+tox==4.23.2
     # via -r requirements/test.txt
 typing-extensions==4.12.2
     # via

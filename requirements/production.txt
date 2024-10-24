@@ -23,11 +23,11 @@ billiard==4.2.1
     # via
     #   -r requirements/base.txt
     #   celery
-boto3==1.35.44
+boto3==1.35.45
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/production.in
-botocore==1.35.44
+botocore==1.35.45
     # via
     #   boto3
     #   s3transfer
@@ -199,7 +199,7 @@ monotonic==1.6
     # via
     #   -r requirements/base.txt
     #   analytics-python
-mysqlclient==2.2.4
+mysqlclient==2.2.5
     # via
     #   -r requirements/nonlocal.txt
     #   -r requirements/production.in

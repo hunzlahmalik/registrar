@@ -215,7 +215,6 @@ packaging==24.1
     # via
     #   -r requirements/base.txt
     #   drf-yasg
-    #   pydata-sphinx-theme
     #   sphinx
 pbr==6.1.0
     # via
@@ -233,7 +232,7 @@ pycparser==2.22
     # via
     #   -r requirements/base.txt
     #   cffi
-pydata-sphinx-theme==0.15.4
+pydata-sphinx-theme==0.16.0
     # via sphinx-book-theme
 pygments==2.18.0
     # via
