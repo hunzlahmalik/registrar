@@ -52,8 +52,7 @@ def get_logger_config(log_dir='/var/tmp',
         'disable_existing_loggers': False,
         'formatters': {
             'standard': {
-                'format': '%(asctime)s %(levelname)s %(process)d '
-                          '[%(name)s] %(filename)s:%(lineno)d - %(message)s',
+                'format': '%(asctime)s %(levelname)s [%(name)s] [%(filename)s:%(lineno)d] [dd.trace_id=%(dd.trace_id)s dd.span_id=%(dd.span_id)s] - %(message)s',
             },
             'syslog_format': {'format': syslog_format},
             'raw': {'format': '%(message)s'},
@@ -85,7 +84,7 @@ def get_logger_config(log_dir='/var/tmp',
             'django.request': {
                 'handlers': handlers,
                 'propagate': True,
-                'level': 'WARNING'
+                'level': 'INFO'
             },
             '': {
                 'handlers': handlers,
