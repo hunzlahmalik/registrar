@@ -4,7 +4,7 @@
 #
 #    make upgrade
 #
-amqp==5.2.0
+amqp==5.3.0
     # via kombu
 analytics-python==1.4.post1
     # via -r requirements/base.in
@@ -73,7 +73,7 @@ django==4.2.16
     #   edx-django-utils
     #   edx-drf-extensions
     #   social-auth-app-django
-django-cors-headers==4.5.0
+django-cors-headers==4.6.0
     # via -r requirements/base.in
 django-crum==0.7.9
     # via edx-django-utils
@@ -87,7 +87,7 @@ django-model-utils==5.0.0
     # via
     #   -r requirements/base.in
     #   django-user-tasks
-django-mysql==4.14.0
+django-mysql==4.15.0
     # via -r requirements/base.in
 django-simple-history==3.7.0
     # via -r requirements/base.in
@@ -128,7 +128,7 @@ edx-django-utils==7.0.0
     # via
     #   edx-drf-extensions
     #   edx-rest-api-client
-edx-drf-extensions==10.4.0
+edx-drf-extensions==10.5.0
     # via -r requirements/base.in
 edx-opaque-keys==2.11.0
     # via edx-drf-extensions
@@ -150,7 +150,7 @@ oauthlib==3.2.2
     # via
     #   requests-oauthlib
     #   social-auth-core
-packaging==24.1
+packaging==24.2
     # via drf-yasg
 pbr==6.1.0
     # via stevedore
@@ -189,7 +189,7 @@ pyyaml==6.0.2
     # via
     #   drf-yasg
     #   edx-django-release-util
-redis==5.1.1
+redis==5.2.0
     # via -r requirements/base.in
 requests==2.32.3
     # via

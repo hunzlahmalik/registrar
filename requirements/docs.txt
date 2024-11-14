@@ -8,7 +8,7 @@ accessible-pygments==0.0.5
     # via pydata-sphinx-theme
 alabaster==1.0.0
     # via sphinx
-amqp==5.2.0
+amqp==5.3.0
     # via
     #   -r requirements/base.txt
     #   kombu
@@ -104,7 +104,7 @@ django==4.2.16
     #   edx-django-utils
     #   edx-drf-extensions
     #   social-auth-app-django
-django-cors-headers==4.5.0
+django-cors-headers==4.6.0
     # via -r requirements/base.txt
 django-crum==0.7.9
     # via
@@ -120,7 +120,7 @@ django-model-utils==5.0.0
     # via
     #   -r requirements/base.txt
     #   django-user-tasks
-django-mysql==4.14.0
+django-mysql==4.15.0
     # via -r requirements/base.txt
 django-simple-history==3.7.0
     # via -r requirements/base.txt
@@ -171,7 +171,7 @@ edx-django-utils==7.0.0
     #   -r requirements/base.txt
     #   edx-drf-extensions
     #   edx-rest-api-client
-edx-drf-extensions==10.4.0
+edx-drf-extensions==10.5.0
     # via -r requirements/base.txt
 edx-opaque-keys==2.11.0
     # via
@@ -211,7 +211,7 @@ oauthlib==3.2.2
     #   -r requirements/base.txt
     #   requests-oauthlib
     #   social-auth-core
-packaging==24.1
+packaging==24.2
     # via
     #   -r requirements/base.txt
     #   drf-yasg
@@ -277,7 +277,7 @@ pyyaml==6.0.2
     #   -r requirements/base.txt
     #   drf-yasg
     #   edx-django-release-util
-redis==5.1.1
+redis==5.2.0
     # via -r requirements/base.txt
 requests==2.32.3
     # via
