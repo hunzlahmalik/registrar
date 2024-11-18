@@ -165,21 +165,6 @@ detect_changed_source_translations: ## check if translation files are up-to-date
 
 validate_translations: fake_translations detect_changed_source_translations ## install fake translations and check if translation files are up-to-date
 
-# Docker commands
-
-docker_build:
-	docker build . --target app -t "openedx/registrar:latest"
-
-docker_auth:
-	echo "$$DOCKERHUB_PASSWORD" | docker login -u "$$DOCKERHUB_USERNAME" --password-stdin
-
-docker_tag: docker_build
-	docker build . --target app -t "openedx/registrar:${GITHUB_SHA}"
-
-docker_push: docker_tag docker_auth ## push to docker hub
-	docker push "openedx/registrar:latest"
-	docker push "openedx/registrar:${GITHUB_SHA}"
-
 install_transifex_client: ## Install the Transifex client
 	curl -o- https://raw.githubusercontent.com/transifex/cli/master/install.sh | bash
 	git checkout -- LICENSE README.md
