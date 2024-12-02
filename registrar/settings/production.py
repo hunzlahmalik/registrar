@@ -1,5 +1,4 @@
 from os import environ
-import django
 import yaml
 
 from registrar.settings.base import *
@@ -54,6 +53,3 @@ CELERY_BROKER_URL = "{}://{}:{}@{}/{}".format(
     CELERY_BROKER_HOSTNAME,
     CELERY_BROKER_VHOST
 )
-
-if django.VERSION[0] >= 4:  # for greater than django 3.2 use schemes.
-    CSRF_TRUSTED_ORIGINS = CSRF_TRUSTED_ORIGINS_WITH_SCHEMES
