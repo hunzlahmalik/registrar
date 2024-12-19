@@ -4,7 +4,7 @@
 #
 #    make upgrade
 #
-amqp==5.3.0
+amqp==5.3.1
     # via kombu
 analytics-python==1.4.post1
     # via -r requirements/base.in
@@ -21,7 +21,7 @@ celery==5.4.0
     #   -c requirements/constraints.txt
     #   -r requirements/base.in
     #   django-user-tasks
-certifi==2024.8.30
+certifi==2024.12.14
     # via requests
 cffi==1.17.1
     # via
@@ -42,7 +42,7 @@ click-plugins==1.1.1
     # via celery
 click-repl==0.3.0
     # via celery
-cryptography==43.0.3
+cryptography==44.0.0
     # via
     #   pyjwt
     #   social-auth-core
@@ -50,7 +50,7 @@ defusedxml==0.8.0rc2
     # via
     #   python3-openid
     #   social-auth-core
-django==4.2.16
+django==4.2.17
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/base.in
@@ -97,7 +97,7 @@ django-storages==1.10.1
     #   -r requirements/base.in
 django-user-tasks==3.2.0
     # via -r requirements/base.in
-django-waffle==4.1.0
+django-waffle==4.2.0
     # via
     #   -r requirements/base.in
     #   edx-django-utils
@@ -124,7 +124,7 @@ edx-auth-backends==4.4.0
     # via -r requirements/base.in
 edx-django-release-util==1.4.0
     # via -r requirements/base.in
-edx-django-utils==7.0.0
+edx-django-utils==7.1.0
     # via
     #   edx-drf-extensions
     #   edx-rest-api-client
@@ -160,7 +160,7 @@ psutil==6.1.0
     # via edx-django-utils
 pycparser==2.22
     # via cffi
-pyjwt[crypto]==2.9.0
+pyjwt[crypto]==2.10.1
     # via
     #   drf-jwt
     #   edx-auth-backends
@@ -189,7 +189,7 @@ pyyaml==6.0.2
     # via
     #   drf-yasg
     #   edx-django-release-util
-redis==5.2.0
+redis==5.2.1
     # via -r requirements/base.in
 requests==2.32.3
     # via
@@ -202,7 +202,7 @@ requests-oauthlib==2.0.0
     # via social-auth-core
 semantic-version==2.10.0
     # via edx-drf-extensions
-six==1.16.0
+six==1.17.0
     # via
     #   analytics-python
     #   edx-auth-backends
@@ -216,9 +216,9 @@ social-auth-core==4.5.4
     # via
     #   edx-auth-backends
     #   social-auth-app-django
-sqlparse==0.5.1
+sqlparse==0.5.3
     # via django
-stevedore==5.3.0
+stevedore==5.4.0
     # via
     #   edx-django-utils
     #   edx-opaque-keys
