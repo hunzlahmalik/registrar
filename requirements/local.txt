@@ -27,7 +27,7 @@ asgiref==3.8.1
     #   -r requirements/test.txt
     #   django
     #   django-cors-headers
-astroid==3.3.6
+astroid==3.3.8
     # via
     #   -r requirements/test.txt
     #   pylint
@@ -51,12 +51,12 @@ billiard==4.2.1
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
     #   celery
-boto3==1.35.82
+boto3==1.35.90
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/test.txt
     #   moto
-botocore==1.35.82
+botocore==1.35.90
     # via
     #   -r requirements/test.txt
     #   boto3
@@ -87,12 +87,12 @@ chardet==5.2.0
     # via
     #   -r requirements/test.txt
     #   tox
-charset-normalizer==3.4.0
+charset-normalizer==3.4.1
     # via
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
     #   requests
-click==8.1.7
+click==8.1.8
     # via
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
@@ -134,7 +134,7 @@ colorama==0.4.6
     #   tox
 configobj==5.0.9
     # via ruamel-yaml-cmd
-coverage[toml]==7.6.9
+coverage[toml]==7.6.10
     # via
     #   -r requirements/test.txt
     #   pytest-cov
@@ -337,7 +337,7 @@ isort[requirements]==5.13.2
     # via
     #   -r requirements/test.txt
     #   pylint
-jinja2==3.1.4
+jinja2==3.1.5
     # via
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
@@ -377,7 +377,7 @@ monotonic==1.6
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
     #   analytics-python
-moto==5.0.23
+moto==5.0.25
     # via -r requirements/test.txt
 newrelic==5.24.0.153
     # via
@@ -431,7 +431,7 @@ prompt-toolkit==3.0.48
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
     #   click-repl
-psutil==6.1.0
+psutil==6.1.1
     # via
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
@@ -462,7 +462,7 @@ pyjwt[crypto]==2.10.1
     #   edx-drf-extensions
     #   edx-rest-api-client
     #   social-auth-core
-pylint==3.3.2
+pylint==3.3.3
     # via
     #   -r requirements/test.txt
     #   edx-lint
@@ -569,7 +569,7 @@ responses==0.17.0
     #   -c requirements/constraints.txt
     #   -r requirements/test.txt
     #   moto
-ruamel-yaml==0.18.6
+ruamel-yaml==0.18.7
     # via
     #   ruamel-yaml-base
     #   ruamel-yaml-cmd
