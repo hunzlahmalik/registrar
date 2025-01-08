@@ -45,12 +45,12 @@ billiard==4.2.1
     # via
     #   -r requirements/local.txt
     #   celery
-boto3==1.35.90
+boto3==1.35.93
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/local.txt
     #   moto
-botocore==1.35.90
+botocore==1.35.93
     # via
     #   -r requirements/local.txt
     #   boto3
@@ -258,7 +258,7 @@ edx-rest-api-client==6.0.0
     # via -r requirements/local.txt
 factory-boy==3.3.1
     # via -r requirements/local.txt
-faker==33.1.0
+faker==33.3.0
     # via
     #   -r requirements/local.txt
     #   factory-boy
@@ -330,7 +330,7 @@ monotonic==1.6
     # via
     #   -r requirements/local.txt
     #   analytics-python
-moto==5.0.25
+moto==5.0.26
     # via -r requirements/local.txt
 mysqlclient==2.2.6
     # via -r requirements/nonlocal.txt
@@ -398,7 +398,7 @@ pydata-sphinx-theme==0.16.1
     # via
     #   -r requirements/local.txt
     #   sphinx-book-theme
-pygments==2.18.0
+pygments==2.19.1
     # via
     #   -r requirements/local.txt
     #   accessible-pygments
@@ -512,7 +512,7 @@ responses==0.17.0
     #   -c requirements/constraints.txt
     #   -r requirements/local.txt
     #   moto
-ruamel-yaml==0.18.7
+ruamel-yaml==0.18.10
     # via
     #   -r requirements/local.txt
     #   ruamel-yaml-base
@@ -635,6 +635,7 @@ uritemplate==4.1.1
     #   drf-yasg
 urllib3==1.26.20
     # via
+    #   -c requirements/common_constraints.txt
     #   -c requirements/constraints.txt
     #   -r requirements/local.txt
     #   botocore
@@ -646,7 +647,7 @@ vine==5.1.0
     #   amqp
     #   celery
     #   kombu
-virtualenv==20.28.0
+virtualenv==20.28.1
     # via
     #   -r requirements/local.txt
     #   tox

@@ -234,7 +234,7 @@ pycparser==2.22
     #   cffi
 pydata-sphinx-theme==0.16.1
     # via sphinx-book-theme
-pygments==2.18.0
+pygments==2.19.1
     # via
     #   accessible-pygments
     #   pydata-sphinx-theme
@@ -364,6 +364,7 @@ uritemplate==4.1.1
     #   drf-yasg
 urllib3==1.26.20
     # via
+    #   -c requirements/common_constraints.txt
     #   -c requirements/constraints.txt
     #   -r requirements/base.txt
     #   requests

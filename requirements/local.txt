@@ -51,12 +51,12 @@ billiard==4.2.1
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
     #   celery
-boto3==1.35.90
+boto3==1.35.93
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/test.txt
     #   moto
-botocore==1.35.90
+botocore==1.35.93
     # via
     #   -r requirements/test.txt
     #   boto3
@@ -304,7 +304,7 @@ edx-rest-api-client==6.0.0
     #   -r requirements/test.txt
 factory-boy==3.3.1
     # via -r requirements/test.txt
-faker==33.1.0
+faker==33.3.0
     # via
     #   -r requirements/test.txt
     #   factory-boy
@@ -377,7 +377,7 @@ monotonic==1.6
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
     #   analytics-python
-moto==5.0.25
+moto==5.0.26
     # via -r requirements/test.txt
 newrelic==5.24.0.153
     # via
@@ -447,7 +447,7 @@ pydata-sphinx-theme==0.16.1
     # via
     #   -r requirements/docs.txt
     #   sphinx-book-theme
-pygments==2.18.0
+pygments==2.19.1
     # via
     #   -r requirements/docs.txt
     #   accessible-pygments
@@ -569,7 +569,7 @@ responses==0.17.0
     #   -c requirements/constraints.txt
     #   -r requirements/test.txt
     #   moto
-ruamel-yaml==0.18.7
+ruamel-yaml==0.18.10
     # via
     #   ruamel-yaml-base
     #   ruamel-yaml-cmd
@@ -695,6 +695,7 @@ uritemplate==4.1.1
     #   drf-yasg
 urllib3==1.26.20
     # via
+    #   -c requirements/common_constraints.txt
     #   -c requirements/constraints.txt
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
@@ -708,7 +709,7 @@ vine==5.1.0
     #   amqp
     #   celery
     #   kombu
-virtualenv==20.28.0
+virtualenv==20.28.1
     # via
     #   -r requirements/test.txt
     #   tox

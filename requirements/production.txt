@@ -23,11 +23,11 @@ billiard==4.2.1
     # via
     #   -r requirements/base.txt
     #   celery
-boto3==1.35.90
+boto3==1.35.93
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/production.in
-botocore==1.35.90
+botocore==1.35.93
     # via
     #   boto3
     #   s3transfer
@@ -342,6 +342,7 @@ uritemplate==4.1.1
     #   drf-yasg
 urllib3==1.26.20
     # via
+    #   -c requirements/common_constraints.txt
     #   -c requirements/constraints.txt
     #   -r requirements/base.txt
     #   botocore
