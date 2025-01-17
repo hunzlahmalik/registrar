@@ -23,11 +23,11 @@ billiard==4.2.1
     # via
     #   -r requirements/base.txt
     #   celery
-boto3==1.35.93
+boto3==1.35.98
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/production.in
-botocore==1.35.93
+botocore==1.35.98
     # via
     #   boto3
     #   s3transfer
@@ -79,7 +79,7 @@ defusedxml==0.8.0rc2
     #   -r requirements/base.txt
     #   python3-openid
     #   social-auth-core
-django==4.2.17
+django==4.2.18
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/base.txt
@@ -199,7 +199,7 @@ monotonic==1.6
     # via
     #   -r requirements/base.txt
     #   analytics-python
-mysqlclient==2.2.6
+mysqlclient==2.2.7
     # via
     #   -r requirements/nonlocal.txt
     #   -r requirements/production.in

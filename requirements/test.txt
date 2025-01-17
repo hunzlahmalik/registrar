@@ -27,11 +27,11 @@ billiard==4.2.1
     # via
     #   -r requirements/base.txt
     #   celery
-boto3==1.35.93
+boto3==1.35.98
     # via
     #   -c requirements/constraints.txt
     #   moto
-botocore==1.35.93
+botocore==1.35.98
     # via
     #   boto3
     #   moto
@@ -210,7 +210,7 @@ edx-rest-api-client==6.0.0
     # via -r requirements/base.txt
 factory-boy==3.3.1
     # via -r requirements/test.in
-faker==33.3.0
+faker==33.3.1
     # via
     #   -r requirements/test.in
     #   factory-boy

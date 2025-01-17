@@ -67,14 +67,14 @@ billiard==4.2.1
     #   -r requirements/monitoring/../production.txt
     #   -r requirements/monitoring/../test.txt
     #   celery
-boto3==1.35.93
+boto3==1.35.98
     # via
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
     #   -r requirements/monitoring/../production.txt
     #   -r requirements/monitoring/../test.txt
     #   moto
-botocore==1.35.93
+botocore==1.35.98
     # via
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
@@ -222,7 +222,7 @@ distlib==0.3.9
     #   -r requirements/monitoring/../local.txt
     #   -r requirements/monitoring/../test.txt
     #   virtualenv
-django==4.2.17
+django==4.2.18
     # via
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
@@ -262,7 +262,7 @@ django-crum==0.7.9
     #   -r requirements/monitoring/../production.txt
     #   -r requirements/monitoring/../test.txt
     #   edx-django-utils
-django-debug-toolbar==4.4.6
+django-debug-toolbar==5.0.1
     # via
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
@@ -420,7 +420,7 @@ factory-boy==3.3.1
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
     #   -r requirements/monitoring/../test.txt
-faker==33.3.0
+faker==33.3.1
     # via
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
@@ -541,7 +541,7 @@ moto==5.0.26
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
     #   -r requirements/monitoring/../test.txt
-mysqlclient==2.2.6
+mysqlclient==2.2.7
     # via
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../production.txt

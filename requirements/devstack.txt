@@ -45,12 +45,12 @@ billiard==4.2.1
     # via
     #   -r requirements/local.txt
     #   celery
-boto3==1.35.93
+boto3==1.35.98
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/local.txt
     #   moto
-botocore==1.35.93
+botocore==1.35.98
     # via
     #   -r requirements/local.txt
     #   boto3
@@ -147,7 +147,7 @@ distlib==0.3.9
     # via
     #   -r requirements/local.txt
     #   virtualenv
-django==4.2.17
+django==4.2.18
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/local.txt
@@ -178,7 +178,7 @@ django-crum==0.7.9
     # via
     #   -r requirements/local.txt
     #   edx-django-utils
-django-debug-toolbar==4.4.6
+django-debug-toolbar==5.0.1
     # via -r requirements/local.txt
 django-dynamic-fixture==4.0.1
     # via -r requirements/local.txt
@@ -258,7 +258,7 @@ edx-rest-api-client==6.0.0
     # via -r requirements/local.txt
 factory-boy==3.3.1
     # via -r requirements/local.txt
-faker==33.3.0
+faker==33.3.1
     # via
     #   -r requirements/local.txt
     #   factory-boy
@@ -332,7 +332,7 @@ monotonic==1.6
     #   analytics-python
 moto==5.0.26
     # via -r requirements/local.txt
-mysqlclient==2.2.6
+mysqlclient==2.2.7
     # via -r requirements/nonlocal.txt
 newrelic==5.24.0.153
     # via
