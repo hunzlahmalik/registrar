@@ -220,7 +220,7 @@ pbr==6.1.0
     # via
     #   -r requirements/base.txt
     #   stevedore
-prompt-toolkit==3.0.48
+prompt-toolkit==3.0.50
     # via
     #   -r requirements/base.txt
     #   click-repl

@@ -23,11 +23,11 @@ billiard==4.2.1
     # via
     #   -r requirements/base.txt
     #   celery
-boto3==1.35.98
+boto3==1.36.2
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/production.in
-botocore==1.35.98
+botocore==1.36.2
     # via
     #   boto3
     #   s3transfer
@@ -222,7 +222,7 @@ pbr==6.1.0
     # via
     #   -r requirements/base.txt
     #   stevedore
-prompt-toolkit==3.0.48
+prompt-toolkit==3.0.50
     # via
     #   -r requirements/base.txt
     #   click-repl
@@ -292,7 +292,7 @@ requests-oauthlib==2.0.0
     # via
     #   -r requirements/base.txt
     #   social-auth-core
-s3transfer==0.10.4
+s3transfer==0.11.1
     # via boto3
 semantic-version==2.10.0
     # via

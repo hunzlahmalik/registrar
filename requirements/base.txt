@@ -154,7 +154,7 @@ packaging==24.2
     # via drf-yasg
 pbr==6.1.0
     # via stevedore
-prompt-toolkit==3.0.48
+prompt-toolkit==3.0.50
     # via click-repl
 psutil==6.1.1
     # via edx-django-utils

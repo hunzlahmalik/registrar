@@ -27,11 +27,11 @@ billiard==4.2.1
     # via
     #   -r requirements/base.txt
     #   celery
-boto3==1.35.98
+boto3==1.36.2
     # via
     #   -c requirements/constraints.txt
     #   moto
-botocore==1.35.98
+botocore==1.36.2
     # via
     #   boto3
     #   moto
@@ -83,7 +83,7 @@ click-repl==0.3.0
     # via
     #   -r requirements/base.txt
     #   celery
-code-annotations==2.1.0
+code-annotations==2.2.0
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/test.in
@@ -256,7 +256,7 @@ monotonic==1.6
     # via
     #   -r requirements/base.txt
     #   analytics-python
-moto==5.0.26
+moto==5.0.27
     # via -r requirements/test.in
 newrelic==5.24.0.153
     # via
@@ -290,7 +290,7 @@ pluggy==1.5.0
     # via
     #   pytest
     #   tox
-prompt-toolkit==3.0.48
+prompt-toolkit==3.0.50
     # via
     #   -r requirements/base.txt
     #   click-repl
@@ -395,7 +395,7 @@ responses==0.17.0
     #   -c requirements/constraints.txt
     #   -r requirements/test.in
     #   moto
-s3transfer==0.10.4
+s3transfer==0.11.1
     # via boto3
 semantic-version==2.10.0
     # via
@@ -465,7 +465,7 @@ vine==5.1.0
     #   amqp
     #   celery
     #   kombu
-virtualenv==20.28.1
+virtualenv==20.29.1
     # via tox
 wcwidth==0.2.13
     # via
