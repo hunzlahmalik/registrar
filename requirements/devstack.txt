@@ -28,7 +28,7 @@ astroid==3.3.8
     #   -r requirements/local.txt
     #   pylint
     #   pylint-celery
-babel==2.16.0
+babel==2.17.0
     # via
     #   -r requirements/local.txt
     #   pydata-sphinx-theme
@@ -37,7 +37,7 @@ backoff==1.10.0
     # via
     #   -r requirements/local.txt
     #   analytics-python
-beautifulsoup4==4.12.3
+beautifulsoup4==4.13.1
     # via
     #   -r requirements/local.txt
     #   pydata-sphinx-theme
@@ -45,18 +45,18 @@ billiard==4.2.1
     # via
     #   -r requirements/local.txt
     #   celery
-boto3==1.36.2
+boto3==1.36.12
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/local.txt
     #   moto
-botocore==1.36.2
+botocore==1.36.12
     # via
     #   -r requirements/local.txt
     #   boto3
     #   moto
     #   s3transfer
-cachetools==5.5.0
+cachetools==5.5.1
     # via
     #   -r requirements/local.txt
     #   tox
@@ -65,7 +65,7 @@ celery==5.4.0
     #   -c requirements/constraints.txt
     #   -r requirements/local.txt
     #   django-user-tasks
-certifi==2024.12.14
+certifi==2025.1.31
     # via
     #   -r requirements/local.txt
     #   requests
@@ -194,7 +194,7 @@ django-model-utils==5.0.0
     #   django-user-tasks
 django-mysql==4.15.0
     # via -r requirements/local.txt
-django-simple-history==3.7.0
+django-simple-history==3.8.0
     # via -r requirements/local.txt
 django-storages==1.10.1
     # via
@@ -248,7 +248,7 @@ edx-drf-extensions==10.5.0
     # via -r requirements/local.txt
 edx-i18n-tools==1.6.3
     # via -r requirements/local.txt
-edx-lint==5.4.1
+edx-lint==5.6.0
     # via -r requirements/local.txt
 edx-opaque-keys==2.11.0
     # via
@@ -256,13 +256,13 @@ edx-opaque-keys==2.11.0
     #   edx-drf-extensions
 edx-rest-api-client==6.0.0
     # via -r requirements/local.txt
-factory-boy==3.3.1
+factory-boy==3.3.3
     # via -r requirements/local.txt
-faker==33.3.1
+faker==35.2.0
     # via
     #   -r requirements/local.txt
     #   factory-boy
-filelock==3.16.1
+filelock==3.17.0
     # via
     #   -r requirements/local.txt
     #   tox
@@ -285,7 +285,7 @@ iniconfig==2.0.0
     # via
     #   -r requirements/local.txt
     #   pytest
-isort[requirements]==5.13.2
+isort[requirements]==6.0.0
     # via
     #   -r requirements/local.txt
     #   pylint
@@ -313,7 +313,7 @@ lxml-html-clean==0.4.1
     # via
     #   -r requirements/local.txt
     #   lxml
-lz4==4.3.3
+lz4==4.4.3
     # via
     #   -r requirements/local.txt
     #   ruamel-yaml-cmd
@@ -330,7 +330,7 @@ monotonic==1.6
     # via
     #   -r requirements/local.txt
     #   analytics-python
-moto==5.0.27
+moto==5.0.28
     # via -r requirements/local.txt
 mysqlclient==2.2.7
     # via -r requirements/nonlocal.txt
@@ -361,7 +361,7 @@ pathspec==0.12.1
     # via
     #   -r requirements/local.txt
     #   yamllint
-pbr==6.1.0
+pbr==6.1.1
     # via
     #   -r requirements/local.txt
     #   stevedore
@@ -412,7 +412,7 @@ pyjwt[crypto]==2.10.1
     #   edx-drf-extensions
     #   edx-rest-api-client
     #   social-auth-core
-pylint==3.3.3
+pylint==3.3.4
     # via
     #   -r requirements/local.txt
     #   edx-lint
@@ -434,7 +434,7 @@ pylint-plugin-utils==0.8.2
     #   pylint-django
 pymemcache==4.0.0
     # via -r requirements/nonlocal.txt
-pymongo==4.10.1
+pymongo==4.11
     # via
     #   -r requirements/local.txt
     #   edx-opaque-keys
@@ -442,7 +442,7 @@ pynacl==1.5.0
     # via
     #   -r requirements/local.txt
     #   edx-django-utils
-pyproject-api==1.8.0
+pyproject-api==1.9.0
     # via
     #   -r requirements/local.txt
     #   tox
@@ -476,7 +476,7 @@ python3-openid==3.2.0
     # via
     #   -r requirements/local.txt
     #   social-auth-core
-pytz==2024.2
+pytz==2025.1
     # via
     #   -r requirements/local.txt
     #   drf-yasg
@@ -532,7 +532,7 @@ ruamel-yaml-convert==0.3.2
     # via
     #   -r requirements/local.txt
     #   ruamel-yaml-cmd
-s3transfer==0.11.1
+s3transfer==0.11.2
     # via
     #   -r requirements/local.txt
     #   boto3
@@ -616,15 +616,16 @@ tomlkit==0.13.2
     # via
     #   -r requirements/local.txt
     #   pylint
-tox==4.23.2
+tox==4.24.1
     # via -r requirements/local.txt
 typing-extensions==4.12.2
     # via
     #   -r requirements/local.txt
+    #   beautifulsoup4
     #   edx-opaque-keys
     #   faker
     #   pydata-sphinx-theme
-tzdata==2024.2
+tzdata==2025.1
     # via
     #   -r requirements/local.txt
     #   celery
