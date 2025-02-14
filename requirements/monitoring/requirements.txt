@@ -55,7 +55,7 @@ backoff==1.10.0
     #   -r requirements/monitoring/../production.txt
     #   -r requirements/monitoring/../test.txt
     #   analytics-python
-beautifulsoup4==4.13.1
+beautifulsoup4==4.13.3
     # via
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
@@ -67,14 +67,14 @@ billiard==4.2.1
     #   -r requirements/monitoring/../production.txt
     #   -r requirements/monitoring/../test.txt
     #   celery
-boto3==1.36.12
+boto3==1.36.17
     # via
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
     #   -r requirements/monitoring/../production.txt
     #   -r requirements/monitoring/../test.txt
     #   moto
-botocore==1.36.12
+botocore==1.36.17
     # via
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
@@ -182,7 +182,7 @@ configobj==5.0.9
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
     #   ruamel-yaml-cmd
-coverage[toml]==7.6.10
+coverage[toml]==7.6.12
     # via
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
@@ -222,7 +222,7 @@ distlib==0.3.9
     #   -r requirements/monitoring/../local.txt
     #   -r requirements/monitoring/../test.txt
     #   virtualenv
-django==4.2.18
+django==4.2.19
     # via
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
@@ -249,7 +249,7 @@ django==4.2.18
     #   edx-drf-extensions
     #   edx-i18n-tools
     #   social-auth-app-django
-django-cors-headers==4.6.0
+django-cors-headers==4.7.0
     # via
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
@@ -290,7 +290,7 @@ django-model-utils==5.0.0
     #   -r requirements/monitoring/../production.txt
     #   -r requirements/monitoring/../test.txt
     #   django-user-tasks
-django-mysql==4.15.0
+django-mysql==4.16.0
     # via
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
@@ -420,7 +420,7 @@ factory-boy==3.3.3
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
     #   -r requirements/monitoring/../test.txt
-faker==35.2.0
+faker==36.1.0
     # via
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
@@ -500,7 +500,7 @@ kombu==5.4.2
     #   -r requirements/monitoring/../production.txt
     #   -r requirements/monitoring/../test.txt
     #   celery
-lxml[html-clean]==5.3.0
+lxml[html-clean]==5.3.1
     # via
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
@@ -692,7 +692,7 @@ pymemcache==4.0.0
     # via
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../production.txt
-pymongo==4.11
+pymongo==4.11.1
     # via
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
@@ -724,7 +724,7 @@ pytest-cov==6.0.0
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
     #   -r requirements/monitoring/../test.txt
-pytest-django==4.9.0
+pytest-django==4.10.0
     # via
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
@@ -738,7 +738,6 @@ python-dateutil==2.9.0.post0
     #   analytics-python
     #   botocore
     #   celery
-    #   faker
     #   freezegun
     #   moto
     #   ruamel-yaml-convert
@@ -975,7 +974,6 @@ typing-extensions==4.12.2
     #   -r requirements/monitoring/../test.txt
     #   beautifulsoup4
     #   edx-opaque-keys
-    #   faker
     #   pydata-sphinx-theme
 tzdata==2025.1
     # via
@@ -984,6 +982,7 @@ tzdata==2025.1
     #   -r requirements/monitoring/../production.txt
     #   -r requirements/monitoring/../test.txt
     #   celery
+    #   faker
     #   kombu
 uritemplate==4.1.1
     # via
@@ -1010,7 +1009,7 @@ vine==5.1.0
     #   amqp
     #   celery
     #   kombu
-virtualenv==20.29.1
+virtualenv==20.29.2
     # via
     #   -r requirements/monitoring/../devstack.txt
     #   -r requirements/monitoring/../local.txt
