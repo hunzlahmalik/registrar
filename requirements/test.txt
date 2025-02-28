@@ -27,16 +27,16 @@ billiard==4.2.1
     # via
     #   -r requirements/base.txt
     #   celery
-boto3==1.36.17
+boto3==1.37.0
     # via
     #   -c requirements/constraints.txt
     #   moto
-botocore==1.36.17
+botocore==1.37.0
     # via
     #   boto3
     #   moto
     #   s3transfer
-cachetools==5.5.1
+cachetools==5.5.2
     # via tox
 celery==5.4.0
     # via
@@ -94,7 +94,7 @@ coverage[toml]==7.6.12
     # via
     #   -r requirements/test.in
     #   pytest-cov
-cryptography==44.0.0
+cryptography==44.0.1
     # via
     #   -r requirements/base.txt
     #   moto
@@ -102,7 +102,7 @@ cryptography==44.0.0
     #   social-auth-core
 ddt==1.7.2
     # via -r requirements/test.in
-defusedxml==0.8.0rc2
+defusedxml==0.7.1
     # via
     #   -r requirements/base.txt
     #   python3-openid
@@ -159,7 +159,7 @@ django-storages==1.10.1
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/base.txt
-django-user-tasks==3.2.0
+django-user-tasks==3.3.0
     # via -r requirements/base.txt
 django-waffle==4.2.0
     # via
@@ -182,7 +182,7 @@ drf-jwt==1.19.2
     # via
     #   -r requirements/base.txt
     #   edx-drf-extensions
-drf-yasg==1.21.8
+drf-yasg==1.21.9
     # via
     #   -r requirements/base.txt
     #   django-user-tasks
@@ -206,11 +206,11 @@ edx-opaque-keys==2.11.0
     # via
     #   -r requirements/base.txt
     #   edx-drf-extensions
-edx-rest-api-client==6.0.0
+edx-rest-api-client==6.1.0
     # via -r requirements/base.txt
 factory-boy==3.3.3
     # via -r requirements/test.in
-faker==36.1.0
+faker==36.1.1
     # via
     #   -r requirements/test.in
     #   factory-boy
@@ -256,7 +256,7 @@ monotonic==1.6
     # via
     #   -r requirements/base.txt
     #   analytics-python
-moto==5.0.28
+moto==5.1.0
     # via -r requirements/test.in
 newrelic==5.24.0.153
     # via
@@ -294,7 +294,7 @@ prompt-toolkit==3.0.50
     # via
     #   -r requirements/base.txt
     #   click-repl
-psutil==6.1.1
+psutil==7.0.0
     # via
     #   -r requirements/base.txt
     #   edx-django-utils
@@ -409,11 +409,11 @@ six==1.17.0
     #   edx-lint
     #   python-dateutil
     #   responses
-social-auth-app-django==5.4.2
+social-auth-app-django==5.4.3
     # via
     #   -r requirements/base.txt
     #   edx-auth-backends
-social-auth-core==4.5.4
+social-auth-core==4.5.6
     # via
     #   -r requirements/base.txt
     #   edx-auth-backends
@@ -422,7 +422,7 @@ sqlparse==0.5.3
     # via
     #   -r requirements/base.txt
     #   django
-stevedore==5.4.0
+stevedore==5.4.1
     # via
     #   -r requirements/base.txt
     #   code-annotations
