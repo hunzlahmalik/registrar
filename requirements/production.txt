@@ -23,11 +23,11 @@ billiard==4.2.1
     # via
     #   -r requirements/base.txt
     #   celery
-boto3==1.37.0
+boto3==1.37.10
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/production.in
-botocore==1.37.0
+botocore==1.37.10
     # via
     #   boto3
     #   s3transfer
@@ -69,7 +69,7 @@ click-repl==0.3.0
     # via
     #   -r requirements/base.txt
     #   celery
-cryptography==44.0.1
+cryptography==44.0.2
     # via
     #   -r requirements/base.txt
     #   pyjwt
@@ -79,7 +79,7 @@ defusedxml==0.7.1
     #   -r requirements/base.txt
     #   python3-openid
     #   social-auth-core
-django==4.2.19
+django==4.2.20
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/base.txt
@@ -149,7 +149,7 @@ drf-jwt==1.19.2
     # via
     #   -r requirements/base.txt
     #   edx-drf-extensions
-drf-yasg==1.21.9
+drf-yasg==1.21.10
     # via
     #   -r requirements/base.txt
     #   django-user-tasks
@@ -160,7 +160,7 @@ edx-auth-backends==4.4.0
     # via -r requirements/base.txt
 edx-django-release-util==1.4.0
     # via -r requirements/base.txt
-edx-django-utils==7.1.0
+edx-django-utils==7.2.0
     # via
     #   -r requirements/base.txt
     #   edx-drf-extensions
@@ -244,7 +244,7 @@ pyjwt[crypto]==2.10.1
     #   social-auth-core
 pymemcache==4.0.0
     # via -r requirements/nonlocal.txt
-pymongo==4.11.1
+pymongo==4.11.2
     # via
     #   -r requirements/base.txt
     #   edx-opaque-keys
@@ -292,7 +292,7 @@ requests-oauthlib==2.0.0
     # via
     #   -r requirements/base.txt
     #   social-auth-core
-s3transfer==0.11.2
+s3transfer==0.11.4
     # via boto3
 semantic-version==2.10.0
     # via
