@@ -191,7 +191,7 @@ inflection==0.5.1
     #   drf-yasg
 jinja2==3.1.6
     # via sphinx
-kombu==5.4.2
+kombu==5.5.0
     # via
     #   -r requirements/base.txt
     #   celery
@@ -248,7 +248,7 @@ pyjwt[crypto]==2.10.1
     #   edx-drf-extensions
     #   edx-rest-api-client
     #   social-auth-core
-pymongo==4.11.2
+pymongo==4.11.3
     # via
     #   -r requirements/base.txt
     #   edx-opaque-keys

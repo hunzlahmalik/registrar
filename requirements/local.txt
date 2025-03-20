@@ -51,12 +51,12 @@ billiard==4.2.1
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
     #   celery
-boto3==1.37.10
+boto3==1.37.14
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/test.txt
     #   moto
-botocore==1.37.10
+botocore==1.37.14
     # via
     #   -r requirements/test.txt
     #   boto3
@@ -134,7 +134,7 @@ colorama==0.4.6
     #   tox
 configobj==5.0.9
     # via ruamel-yaml-cmd
-coverage[toml]==7.6.12
+coverage[toml]==7.7.0
     # via
     #   -r requirements/test.txt
     #   pytest-cov
@@ -308,7 +308,7 @@ faker==37.0.0
     # via
     #   -r requirements/test.txt
     #   factory-boy
-filelock==3.17.0
+filelock==3.18.0
     # via
     #   -r requirements/test.txt
     #   tox
@@ -349,7 +349,7 @@ jmespath==1.0.1
     #   -r requirements/test.txt
     #   boto3
     #   botocore
-kombu==5.4.2
+kombu==5.5.0
     # via
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
@@ -483,7 +483,7 @@ pylint-plugin-utils==0.8.2
     #   -r requirements/test.txt
     #   pylint-celery
     #   pylint-django
-pymongo==4.11.2
+pymongo==4.11.3
     # via
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
@@ -731,7 +731,7 @@ xmltodict==0.14.2
     # via
     #   -r requirements/test.txt
     #   moto
-yamllint==1.36.0
+yamllint==1.36.2
     # via -r requirements/test.txt
 
 # The following packages are considered to be unsafe in a requirements file:
