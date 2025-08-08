@@ -44,7 +44,8 @@ class DiscoveryServiceClient:
     @classmethod
     def get_programs_by_types(cls, types):
         """
-        Fetch a JSON representation of all active programs of specified types from the Discovery service.
+        Fetch a JSON representation of all active programs of specified
+        types from the Discovery service.
 
         Returns empty if not found or other HTTP error.
 
@@ -62,15 +63,48 @@ class DiscoveryServiceClient:
             return get_all_paginated_results(url)
         except HTTPError:
             logger.exception(
-                "Failed to load programs with program_types %s from Discovery service.",
+                "Failed to load programs with program_types %s from "
+                "Discovery service.",
                 ','.join(types),
+            )
+            return []
+
+    @classmethod
+    def get_programs_by_uuids(cls, uuids):
+        """
+        Fetch a JSON representation of programs by their UUIDs from the
+        Discovery service.
+
+        Returns empty if not found or other HTTP error.
+
+        Arguments:
+            * uuids: [program_uuids]
+
+        Returns: [programs] | []
+        """
+        if not uuids:
+            return []
+
+        url = urljoin(
+            settings.DISCOVERY_BASE_URL,
+            DISCOVERY_API_TPL.format('programs', '')
+        )
+        url += f'?uuids={",".join(str(uuid) for uuid in uuids)}'
+        try:
+            return get_all_paginated_results(url)
+        except HTTPError:
+            logger.exception(
+                "Failed to load programs with uuids %s from "
+                "Discovery service.",
+                ','.join(str(uuid) for uuid in uuids),
             )
             return []
 
     @classmethod
     def get_organizations(cls):
         """
-        Fetch a JSON representation of organizations from the Discovery service.
+        Fetch a JSON representation of organizations from the Discovery
+        service.
 
         Returns None if not found or other HTTP error.
 

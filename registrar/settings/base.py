@@ -345,3 +345,8 @@ SIMPLE_HISTORY_DATE_INDEX = False
 
 # Keep using deprecated pytz for Django>4
 USE_DEPRECATED_PYTZ = True
+
+# Discovery Programs Batch API Batch size
+# Use to get Programs in batches from Discovery
+# CAUTION: Setting to higher batch size may have risks exceeding URL limits
+REGISTRAR_DISCOVERY_PROGRAMS_API_BATCH_SIZE = 20

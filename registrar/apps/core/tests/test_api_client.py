@@ -95,7 +95,9 @@ class DiscoveryServiceClientTestCase(TestCase):
             status=status,
             json=self.get_multi_response(results),
         )
-        programs = DiscoveryServiceClient.get_programs_by_types(self.program_types)
+        programs = DiscoveryServiceClient.get_programs_by_types(
+            self.program_types
+        )
         if status == 200:
             self.assertEqual(results, programs)
         else:
@@ -104,7 +106,8 @@ class DiscoveryServiceClientTestCase(TestCase):
     @mock_oauth_login
     @responses.activate
     @ddt.data(
-        (200, [organization_from_discovery, another_organization_from_discovery]),
+        (200, [organization_from_discovery,
+               another_organization_from_discovery]),
         (403, [])
     )
     @ddt.unpack
@@ -124,3 +127,62 @@ class DiscoveryServiceClientTestCase(TestCase):
             self.assertEqual(results, orgs)
         else:
             self.assertEqual([], orgs)
+
+    @mock_oauth_login
+    @responses.activate
+    @ddt.data(
+        (200, [master_from_discovery, mm_program_from_discovery]),
+        (403, [])
+    )
+    @ddt.unpack
+    def test_get_programs_by_uuids(self, status, results):
+        """Test the new bulk fetch method for programs by UUIDs."""
+        uuids = [self.master_uuid, "99999999-4444-2222-1111-000000000011"]
+        discovery_url = urljoin(
+            settings.DISCOVERY_BASE_URL,
+            DISCOVERY_API_TPL.format('programs', '')
+        )
+        discovery_url += f'?uuids={",".join(str(uuid) for uuid in uuids)}'
+
+        responses.add(
+            responses.GET,
+            discovery_url,
+            status=status,
+            json=self.get_multi_response(results),
+        )
+
+        programs = DiscoveryServiceClient.get_programs_by_uuids(uuids)
+        if status == 200:
+            self.assertEqual(results, programs)
+        else:
+            self.assertEqual([], programs)
+
+    @mock_oauth_login
+    @responses.activate
+    def test_get_programs_by_uuids_empty_list(self):
+        """Test that empty UUID list returns empty result."""
+        programs = DiscoveryServiceClient.get_programs_by_uuids([])
+        # Should still work and return empty list without making API call
+        self.assertEqual([], programs)
+        self.assertEqual(len(responses.calls), 0)
+
+    @mock_oauth_login
+    @responses.activate
+    def test_get_programs_by_uuids_single_uuid(self):
+        """Test bulk fetch with single UUID."""
+        uuids = [self.master_uuid]
+        discovery_url = urljoin(
+            settings.DISCOVERY_BASE_URL,
+            DISCOVERY_API_TPL.format('programs', '')
+        )
+        discovery_url += f'?uuids={str(self.master_uuid)}'
+
+        responses.add(
+            responses.GET,
+            discovery_url,
+            status=200,
+            json=self.get_multi_response([self.master_from_discovery]),
+        )
+
+        programs = DiscoveryServiceClient.get_programs_by_uuids(uuids)
+        self.assertEqual([self.master_from_discovery], programs)
