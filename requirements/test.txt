@@ -27,11 +27,11 @@ billiard==4.2.1
     # via
     #   -r requirements/base.txt
     #   celery
-boto3==1.40.17
+boto3==1.40.26
     # via
     #   -c requirements/constraints.txt
     #   moto
-botocore==1.40.17
+botocore==1.40.26
     # via
     #   boto3
     #   moto
@@ -47,7 +47,7 @@ certifi==2025.8.3
     # via
     #   -r requirements/base.txt
     #   requests
-cffi==1.17.1
+cffi==2.0.0
     # via
     #   -r requirements/base.txt
     #   cryptography
@@ -92,11 +92,11 @@ code-annotations==2.3.0
     #   edx-toggles
 colorama==0.4.6
     # via tox
-coverage[toml]==7.10.5
+coverage[toml]==7.10.6
     # via
     #   -r requirements/test.in
     #   pytest-cov
-cryptography==45.0.6
+cryptography==45.0.7
     # via
     #   -r requirements/base.txt
     #   moto
@@ -136,7 +136,7 @@ distlib==0.4.0
     #   edx-drf-extensions
     #   edx-toggles
     #   social-auth-app-django
-django-cors-headers==4.7.0
+django-cors-headers==4.8.0
     # via -r requirements/base.txt
 django-crum==0.7.9
     # via
@@ -149,13 +149,13 @@ django-extensions==3.1.5
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/base.txt
-django-guardian==3.0.3
+django-guardian==3.1.2
     # via -r requirements/base.txt
 django-model-utils==5.0.0
     # via
     #   -r requirements/base.txt
     #   django-user-tasks
-django-mysql==4.17.0
+django-mysql==4.18.0
     # via -r requirements/base.txt
 django-simple-history==3.10.1
     # via -r requirements/base.txt
@@ -179,7 +179,7 @@ djangorestframework==3.16.1
     #   drf-yasg
     #   edx-api-doc-tools
     #   edx-drf-extensions
-dnspython==2.7.0
+dnspython==2.8.0
     # via
     #   -r requirements/base.txt
     #   pymongo
@@ -221,7 +221,7 @@ edx-toggles==5.4.1
     #   edx-auth-backends
 factory-boy==3.3.3
     # via -r requirements/test.in
-faker==37.5.3
+faker==37.6.0
     # via
     #   -r requirements/test.in
     #   factory-boy
@@ -269,7 +269,7 @@ monotonic==1.6
     # via
     #   -r requirements/base.txt
     #   analytics-python
-moto==5.1.11
+moto==5.1.12
     # via -r requirements/test.in
 oauthlib==3.3.1
     # via
@@ -296,7 +296,7 @@ pluggy==1.6.0
     #   pytest
     #   pytest-cov
     #   tox
-prompt-toolkit==3.0.51
+prompt-toolkit==3.0.52
     # via
     #   -r requirements/base.txt
     #   click-repl
@@ -306,7 +306,7 @@ psutil==7.0.0
     #   edx-django-utils
 pycodestyle==2.14.0
     # via -r requirements/test.in
-pycparser==2.22
+pycparser==2.23
     # via
     #   -r requirements/base.txt
     #   cffi
@@ -344,12 +344,12 @@ pynacl==1.5.0
     #   edx-django-utils
 pyproject-api==1.9.1
     # via tox
-pytest==8.4.1
+pytest==8.4.2
     # via
     #   -r requirements/test.in
     #   pytest-cov
     #   pytest-django
-pytest-cov==6.2.1
+pytest-cov==7.0.0
     # via -r requirements/test.in
 pytest-django==4.11.1
     # via -r requirements/test.in
@@ -442,11 +442,12 @@ text-unidecode==1.3
     #   python-slugify
 tomlkit==0.13.3
     # via pylint
-tox==4.28.4
+tox==4.30.2
     # via -r requirements/test.in
 typing-extensions==4.15.0
     # via
     #   -r requirements/base.txt
+    #   django-guardian
     #   edx-opaque-keys
 tzdata==2025.2
     # via
@@ -478,7 +479,7 @@ wcwidth==0.2.13
     #   prompt-toolkit
 werkzeug==3.1.3
     # via moto
-xmltodict==0.14.2
+xmltodict==0.15.1
     # via moto
 yamllint==1.37.1
     # via -r requirements/test.in

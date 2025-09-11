@@ -23,7 +23,7 @@ celery==5.5.3
     #   django-user-tasks
 certifi==2025.8.3
     # via requests
-cffi==1.17.1
+cffi==2.0.0
     # via
     #   cryptography
     #   pynacl
@@ -47,7 +47,7 @@ code-annotations==2.3.0
     # via
     #   -c requirements/constraints.txt
     #   edx-toggles
-cryptography==45.0.6
+cryptography==45.0.7
     # via
     #   pyjwt
     #   social-auth-core
@@ -55,7 +55,7 @@ defusedxml==0.7.1
     # via
     #   python3-openid
     #   social-auth-core
-django==4.2.23
+django==4.2.24
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/base.in
@@ -79,7 +79,7 @@ django==4.2.23
     #   edx-drf-extensions
     #   edx-toggles
     #   social-auth-app-django
-django-cors-headers==4.7.0
+django-cors-headers==4.8.0
     # via -r requirements/base.in
 django-crum==0.7.9
     # via
@@ -89,13 +89,13 @@ django-extensions==3.1.5
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/base.in
-django-guardian==3.0.3
+django-guardian==3.1.2
     # via -r requirements/base.in
 django-model-utils==5.0.0
     # via
     #   -r requirements/base.in
     #   django-user-tasks
-django-mysql==4.17.0
+django-mysql==4.18.0
     # via -r requirements/base.in
 django-simple-history==3.10.1
     # via -r requirements/base.in
@@ -119,7 +119,7 @@ djangorestframework==3.16.1
     #   drf-yasg
     #   edx-api-doc-tools
     #   edx-drf-extensions
-dnspython==2.7.0
+dnspython==2.8.0
     # via pymongo
 drf-jwt==1.19.2
     # via edx-drf-extensions
@@ -167,11 +167,11 @@ packaging==25.0
     # via
     #   drf-yasg
     #   kombu
-prompt-toolkit==3.0.51
+prompt-toolkit==3.0.52
     # via click-repl
 psutil==7.0.0
     # via edx-django-utils
-pycparser==2.22
+pycparser==2.23
     # via cffi
 pyjwt[crypto]==2.10.1
     # via
@@ -241,7 +241,9 @@ stevedore==5.5.0
 text-unidecode==1.3
     # via python-slugify
 typing-extensions==4.15.0
-    # via edx-opaque-keys
+    # via
+    #   django-guardian
+    #   edx-opaque-keys
 tzdata==2025.2
     # via kombu
 uritemplate==4.2.0

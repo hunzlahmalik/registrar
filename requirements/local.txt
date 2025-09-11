@@ -51,12 +51,12 @@ billiard==4.2.1
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
     #   celery
-boto3==1.40.17
+boto3==1.40.26
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/test.txt
     #   moto
-botocore==1.40.17
+botocore==1.40.26
     # via
     #   -r requirements/test.txt
     #   boto3
@@ -77,7 +77,7 @@ certifi==2025.8.3
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
     #   requests
-cffi==1.17.1
+cffi==2.0.0
     # via
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
@@ -136,11 +136,11 @@ colorama==0.4.6
     #   tox
 configobj==5.0.9
     # via ruamel-yaml-cmd
-coverage[toml]==7.10.5
+coverage[toml]==7.10.6
     # via
     #   -r requirements/test.txt
     #   pytest-cov
-cryptography==45.0.6
+cryptography==45.0.7
     # via
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
@@ -163,7 +163,7 @@ distlib==0.4.0
     # via
     #   -r requirements/test.txt
     #   virtualenv
-django==4.2.23
+django==4.2.24
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/docs.txt
@@ -190,7 +190,7 @@ django==4.2.23
     #   edx-i18n-tools
     #   edx-toggles
     #   social-auth-app-django
-django-cors-headers==4.7.0
+django-cors-headers==4.8.0
     # via
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
@@ -209,7 +209,7 @@ django-extensions==3.1.5
     #   -c requirements/constraints.txt
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
-django-guardian==3.0.3
+django-guardian==3.1.2
     # via
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
@@ -218,7 +218,7 @@ django-model-utils==5.0.0
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
     #   django-user-tasks
-django-mysql==4.17.0
+django-mysql==4.18.0
     # via
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
@@ -251,7 +251,7 @@ djangorestframework==3.16.1
     #   drf-yasg
     #   edx-api-doc-tools
     #   edx-drf-extensions
-dnspython==2.7.0
+dnspython==2.8.0
     # via
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
@@ -316,7 +316,7 @@ edx-toggles==5.4.1
     #   edx-auth-backends
 factory-boy==3.3.3
     # via -r requirements/test.txt
-faker==37.5.3
+faker==37.6.0
     # via
     #   -r requirements/test.txt
     #   factory-boy
@@ -389,7 +389,7 @@ monotonic==1.6
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
     #   analytics-python
-moto==5.1.11
+moto==5.1.12
     # via -r requirements/test.txt
 oauthlib==3.3.1
     # via
@@ -430,7 +430,7 @@ pluggy==1.6.0
     #   tox
 polib==1.2.0
     # via edx-i18n-tools
-prompt-toolkit==3.0.51
+prompt-toolkit==3.0.52
     # via
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
@@ -442,7 +442,7 @@ psutil==7.0.0
     #   edx-django-utils
 pycodestyle==2.14.0
     # via -r requirements/test.txt
-pycparser==2.22
+pycparser==2.23
     # via
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
@@ -502,12 +502,12 @@ pyproject-api==1.9.1
     # via
     #   -r requirements/test.txt
     #   tox
-pytest==8.4.1
+pytest==8.4.2
     # via
     #   -r requirements/test.txt
     #   pytest-cov
     #   pytest-django
-pytest-cov==6.2.1
+pytest-cov==7.0.0
     # via -r requirements/test.txt
 pytest-django==4.11.1
     # via -r requirements/test.txt
@@ -625,7 +625,7 @@ social-auth-core==4.7.0
     #   -r requirements/test.txt
     #   edx-auth-backends
     #   social-auth-app-django
-soupsieve==2.7
+soupsieve==2.8
     # via
     #   -r requirements/docs.txt
     #   beautifulsoup4
@@ -682,13 +682,14 @@ tomlkit==0.13.3
     # via
     #   -r requirements/test.txt
     #   pylint
-tox==4.28.4
+tox==4.30.2
     # via -r requirements/test.txt
 typing-extensions==4.15.0
     # via
     #   -r requirements/docs.txt
     #   -r requirements/test.txt
     #   beautifulsoup4
+    #   django-guardian
     #   edx-opaque-keys
     #   pydata-sphinx-theme
 tzdata==2025.2
@@ -730,7 +731,7 @@ werkzeug==3.1.3
     # via
     #   -r requirements/test.txt
     #   moto
-xmltodict==0.14.2
+xmltodict==0.15.1
     # via
     #   -r requirements/test.txt
     #   moto
