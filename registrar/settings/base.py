@@ -189,10 +189,18 @@ LOCALE_PATHS = (
     root('conf', 'locale'),
 )
 
+STORAGES = {
+    "default": {
+        "BACKEND": "django.core.files.storage.FileSystemStorage",
+    },
+    "staticfiles": {
+        "BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage",
+    },
+}
+
 # MEDIA CONFIGURATION
 MEDIA_ROOT = root('media')
 MEDIA_URL = '/api/media/'
-DEFAULT_FILE_STORAGE = 'django.core.files.storage.FileSystemStorage'
 REGISTRAR_BUCKET = 'change-me-to-registrar-bucket'
 PROGRAM_REPORTS_BUCKET = 'change-me-to-program-reports-bucket'
 PROGRAM_REPORTS_FOLDER = 'reports_v2'
@@ -325,7 +333,6 @@ CSRF_COOKIE_SECURE = False
 EXTRA_APPS = []
 SERVICE_USER = 'registrar_service_user'
 SESSION_EXPIRE_AT_BROWSER_CLOSE = False
-STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 CSRF_TRUSTED_ORIGINS = []
 CACHES = {
     'default': {

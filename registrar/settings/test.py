@@ -45,7 +45,7 @@ CELERY_BROKER_URL = 'memory://localhost/'
 # END CELERY
 
 # Media
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+STORAGES["default"]["BACKEND"] = 'storages.backends.s3boto3.S3Boto3Storage'
 AWS_LOCATION = ''
 AWS_QUERYSTRING_AUTH = True
 AWS_QUERYSTRING_EXPIRE = 3600
