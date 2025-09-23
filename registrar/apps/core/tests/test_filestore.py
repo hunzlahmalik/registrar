@@ -9,7 +9,10 @@ import ddt
 import moto
 import requests
 from botocore.exceptions import ClientError
+from django.conf import settings
 from django.test import TestCase
+from django.test.utils import override_settings
+from storages.backends.s3boto3 import S3Boto3Storage
 
 from ..filestore import (
     FilestoreBase,
@@ -19,6 +22,7 @@ from ..filestore import (
     get_filestore,
     get_job_results_filestore,
     get_program_reports_filestore,
+    get_storage_class,
 )
 from ..filestore import logger as filestore_logger
 from .mixins import S3MockEnvVarsMixin
@@ -140,3 +144,21 @@ class FilestoreTests(TestCase):
             assert path_prefix in log_message
             assert filepath in log_message
             assert contents not in log_message
+
+
+class GetStorageClassTests(TestCase):
+    @override_settings(
+        STORAGES={"default": {"BACKEND": "storages.backends.s3boto3.S3Boto3Storage"}}
+    )
+    def test_get_storage_class_with_storages(self):
+        storage_class = get_storage_class()
+        self.assertIs(storage_class, S3Boto3Storage)
+
+    @override_settings(
+        DEFAULT_FILE_STORAGE="storages.backends.s3boto3.S3Boto3Storage",
+        STORAGES={}
+    )
+    def test_get_storage_class_with_default_file_storage(self):
+        del settings.STORAGES
+        storage_class = get_storage_class()
+        self.assertIs(storage_class, S3Boto3Storage)

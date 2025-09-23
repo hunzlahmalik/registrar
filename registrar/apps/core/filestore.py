@@ -7,12 +7,29 @@ from botocore.exceptions import ClientError
 from django.conf import settings
 from django.core.exceptions import ImproperlyConfigured
 from django.core.files.base import ContentFile
-from django.core.files.storage import default_storage, get_storage_class
+from django.core.files.storage import default_storage
+from django.utils.module_loading import import_string
 
 from registrar.apps.api.utils import to_absolute_api_url
 
 
 logger = logging.getLogger(__name__)
+
+
+def get_storage_class():
+    # Prefer new-style Django 4.2+ STORAGES
+    storages_config = getattr(settings, 'STORAGES', {})
+
+    if storages_config.get('default') and storages_config['default'].get('BACKEND'):
+        return import_string(storages_config['default'].get('BACKEND'))
+
+    # Legacy fallback: DEFAULT_FILE_STORAGE
+    storage_class_path = getattr(settings, 'DEFAULT_FILE_STORAGE', {})
+
+    if storage_class_path:
+        return import_string(storage_class_path)
+
+    return default_storage.__class__
 
 
 class FilestoreBase:
