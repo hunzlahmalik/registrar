@@ -18,7 +18,7 @@ amqp==5.3.1
     #   kombu
 analytics-python==1.4.post1
     # via -r requirements/local.txt
-asgiref==3.9.1
+asgiref==3.9.2
     # via
     #   -r requirements/local.txt
     #   django
@@ -41,16 +41,16 @@ beautifulsoup4==4.13.5
     # via
     #   -r requirements/local.txt
     #   pydata-sphinx-theme
-billiard==4.2.1
+billiard==4.2.2
     # via
     #   -r requirements/local.txt
     #   celery
-boto3==1.40.26
+boto3==1.40.36
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/local.txt
     #   moto
-botocore==1.40.26
+botocore==1.40.36
     # via
     #   -r requirements/local.txt
     #   boto3
@@ -82,7 +82,7 @@ charset-normalizer==3.4.3
     # via
     #   -r requirements/local.txt
     #   requests
-click==8.2.1
+click==8.3.0
     # via
     #   -r requirements/local.txt
     #   celery
@@ -123,11 +123,11 @@ configobj==5.0.9
     # via
     #   -r requirements/local.txt
     #   ruamel-yaml-cmd
-coverage[toml]==7.10.6
+coverage[toml]==7.10.7
     # via
     #   -r requirements/local.txt
     #   pytest-cov
-cryptography==45.0.7
+cryptography==46.0.1
     # via
     #   -r requirements/local.txt
     #   moto
@@ -174,7 +174,7 @@ django==4.2.24
     #   edx-i18n-tools
     #   edx-toggles
     #   social-auth-app-django
-django-cors-headers==4.8.0
+django-cors-headers==4.9.0
     # via -r requirements/local.txt
 django-crum==0.7.9
     # via
@@ -189,13 +189,13 @@ django-extensions==3.1.5
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/local.txt
-django-guardian==3.1.2
+django-guardian==3.2.0
     # via -r requirements/local.txt
 django-model-utils==5.0.0
     # via
     #   -r requirements/local.txt
     #   django-user-tasks
-django-mysql==4.18.0
+django-mysql==4.19.0
     # via -r requirements/local.txt
 django-simple-history==3.10.1
     # via -r requirements/local.txt
@@ -268,7 +268,7 @@ edx-toggles==5.4.1
     #   edx-auth-backends
 factory-boy==3.3.3
     # via -r requirements/local.txt
-faker==37.6.0
+faker==37.8.0
     # via
     #   -r requirements/local.txt
     #   factory-boy
@@ -314,7 +314,7 @@ kombu==5.5.4
     # via
     #   -r requirements/local.txt
     #   celery
-lxml[html-clean]==6.0.1
+lxml[html-clean]==6.0.2
     # via
     #   -r requirements/local.txt
     #   edx-i18n-tools
@@ -340,7 +340,7 @@ monotonic==1.6
     # via
     #   -r requirements/local.txt
     #   analytics-python
-moto==5.1.12
+moto==5.1.13
     # via -r requirements/local.txt
 mysqlclient==2.2.7
     # via -r requirements/nonlocal.txt
@@ -388,7 +388,7 @@ prompt-toolkit==3.0.52
     # via
     #   -r requirements/local.txt
     #   click-repl
-psutil==7.0.0
+psutil==7.1.0
     # via
     #   -r requirements/local.txt
     #   edx-django-utils
@@ -439,11 +439,11 @@ pylint-plugin-utils==0.9.0
     #   pylint-django
 pymemcache==4.0.0
     # via -r requirements/nonlocal.txt
-pymongo==4.14.1
+pymongo==4.15.1
     # via
     #   -r requirements/local.txt
     #   edx-opaque-keys
-pynacl==1.5.0
+pynacl==1.6.0
     # via
     #   -r requirements/local.txt
     #   edx-django-utils
@@ -530,7 +530,7 @@ ruamel-yaml-base==0.3.2
     # via
     #   -r requirements/local.txt
     #   ruamel-yaml-cmd
-ruamel-yaml-clib==0.2.12
+ruamel-yaml-clib==0.2.14
     # via
     #   -r requirements/local.txt
     #   ruamel-yaml
@@ -540,7 +540,7 @@ ruamel-yaml-convert==0.3.2
     # via
     #   -r requirements/local.txt
     #   ruamel-yaml-cmd
-s3transfer==0.13.1
+s3transfer==0.14.0
     # via
     #   -r requirements/local.txt
     #   boto3
@@ -659,7 +659,7 @@ virtualenv==20.34.0
     # via
     #   -r requirements/local.txt
     #   tox
-wcwidth==0.2.13
+wcwidth==0.2.14
     # via
     #   -r requirements/local.txt
     #   prompt-toolkit
@@ -667,7 +667,7 @@ werkzeug==3.1.3
     # via
     #   -r requirements/local.txt
     #   moto
-xmltodict==0.15.1
+xmltodict==1.0.2
     # via
     #   -r requirements/local.txt
     #   moto

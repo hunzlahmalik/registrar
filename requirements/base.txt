@@ -8,13 +8,13 @@ amqp==5.3.1
     # via kombu
 analytics-python==1.4.post1
     # via -r requirements/base.in
-asgiref==3.9.1
+asgiref==3.9.2
     # via
     #   django
     #   django-cors-headers
 backoff==1.10.0
     # via analytics-python
-billiard==4.2.1
+billiard==4.2.2
     # via celery
 celery==5.5.3
     # via
@@ -29,7 +29,7 @@ cffi==2.0.0
     #   pynacl
 charset-normalizer==3.4.3
     # via requests
-click==8.2.1
+click==8.3.0
     # via
     #   celery
     #   click-didyoumean
@@ -47,7 +47,7 @@ code-annotations==2.3.0
     # via
     #   -c requirements/constraints.txt
     #   edx-toggles
-cryptography==45.0.7
+cryptography==46.0.1
     # via
     #   pyjwt
     #   social-auth-core
@@ -79,7 +79,7 @@ django==4.2.24
     #   edx-drf-extensions
     #   edx-toggles
     #   social-auth-app-django
-django-cors-headers==4.8.0
+django-cors-headers==4.9.0
     # via -r requirements/base.in
 django-crum==0.7.9
     # via
@@ -89,13 +89,13 @@ django-extensions==3.1.5
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/base.in
-django-guardian==3.1.2
+django-guardian==3.2.0
     # via -r requirements/base.in
 django-model-utils==5.0.0
     # via
     #   -r requirements/base.in
     #   django-user-tasks
-django-mysql==4.18.0
+django-mysql==4.19.0
     # via -r requirements/base.in
 django-simple-history==3.10.1
     # via -r requirements/base.in
@@ -169,7 +169,7 @@ packaging==25.0
     #   kombu
 prompt-toolkit==3.0.52
     # via click-repl
-psutil==7.0.0
+psutil==7.1.0
     # via edx-django-utils
 pycparser==2.23
     # via cffi
@@ -180,9 +180,9 @@ pyjwt[crypto]==2.10.1
     #   edx-drf-extensions
     #   edx-rest-api-client
     #   social-auth-core
-pymongo==4.14.1
+pymongo==4.15.1
     # via edx-opaque-keys
-pynacl==1.5.0
+pynacl==1.6.0
     # via edx-django-utils
 python-dateutil==2.9.0.post0
     # via
@@ -257,7 +257,7 @@ vine==5.1.0
     #   amqp
     #   celery
     #   kombu
-wcwidth==0.2.13
+wcwidth==0.2.14
     # via prompt-toolkit
 
 # The following packages are considered to be unsafe in a requirements file:
