@@ -35,7 +35,7 @@ DATABASES = {
     }
 }
 
-staticfiles_storage = os.environ.get('STATICFILES_STORAGE', 'django.contrib.staticfiles.storage.StaticFilesStorage')
+staticfiles_storage = os.environ.get('STATICFILES_STORAGE')
 
 if staticfiles_storage:
     STORAGES["staticfiles"]["BACKEND"] = staticfiles_storage

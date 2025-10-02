@@ -36,12 +36,12 @@ with open(CONFIG_FILE, encoding='utf-8') as f:
     default_file_storage = MEDIA_STORAGE_BACKEND.pop('DEFAULT_FILE_STORAGE', None)
     staticfiles_storage = MEDIA_STORAGE_BACKEND.pop('STATICFILES_STORAGE', None)
 
-    vars().update(MEDIA_STORAGE_BACKEND)
-
     if default_file_storage:
         STORAGES["default"]["BACKEND"] = default_file_storage
     if staticfiles_storage:
         STORAGES["staticfiles"]["BACKEND"] = staticfiles_storage
+
+    vars().update(MEDIA_STORAGE_BACKEND)
 
 DB_OVERRIDES = dict(
     PASSWORD=environ.get('DB_MIGRATION_PASS', DATABASES['default']['PASSWORD']),
